@@ -1,7 +1,7 @@
-#### MyDiary
+#### MyDiario
  
 #### Project Overview
-MyDiary is an online journal where users can pen down their thoughts and feelings.
+MyDiario is an online journal where users can pen down their thoughts and feelings.
 
 #### Features
 1. Users can create an account and log in.
@@ -11,9 +11,5 @@ MyDiary is an online journal where users can pen down their thoughts and feeling
 
 #### Other Features
 1. Users can set and get daily notifications that prompt them to add an entry to their diary.
-
-#### Technologies Used
-1. CSS
-2. HTML/5
 
 
