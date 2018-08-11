@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="description" content="My Diary" />
+    <meta name="keywords" content="admin,dashboard" />
+    <meta name="author" content="amoswels" />
+    <title>My Diary</title>
+    <link rel="stylesheet" href="./css/style3.css">
+</head>
+
+<body>
+    <ul class="breadcrumb">
+        <!--<li><a href="index.html">Home</a></li>-->
+        <li>
+            <a href="viewdiaries.html">view Diaries</a>
+        </li>
+        <li>Meet Susan</li>
+    </ul>
+    <div class="container">
+        <form action="viewdiaries.html">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." value="Meet Susan">
+
+            <label for="lname">Due Date</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." value="2002-09-29">
+            <br>
+            <br>
+
+            <label for="country">Type</label>
+            <select id="country" name="country">
+                <option value="#">Office</option>
+                <option value="australia">Office</option>
+                <option value="canada">Home</option>
+                <option value="usa">Sports</option>
+            </select>
+
+            <label for="subject">Purpose</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </textarea>
+            <br>
+            <input type="submit" value="Update" />
+            <input type="submit" value="Delete" />
+        </form>
+    </div>
+    <div class="footer">
+        <ul>
+            <li>Copyrights resevered to my Diary</li>
+            <li>
+                <a>www.mydiary.com</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
