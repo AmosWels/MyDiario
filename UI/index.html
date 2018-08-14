@@ -13,38 +13,33 @@
 
 <body>
     <h2 class="centered">Login To Diario</h2>
-    <form>
+    <div id="call"></div>
+    <form id="Login" method="POST">
         <div class="container">
-            <br>
-
-            <label for="uname">
+            <label for="unamee">
                 <b>Username</b>
             </label>
-            <input type="text" placeholder="Enter Username" name="unamee" required="required">
-
+            <input type="text" placeholder="Enter Username" name="unamee" id="uname" required>
             <label for="psw">
                 <b>Password</b>
             </label>
-            <input type="password" placeholder="Enter Password" name="psw" required="required">
+            <input type="password" placeholder="Enter Password" name="psw" id="upassword" required>
 
             <!-- <a href="viewdiaries.html"><button type="button">Login</button></a> -->
             <!-- <a href=""><button type="button">Login</button></a> -->
-            <button type="submit">Login</button>
-
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me ||
-                <span class="signup">
-                    <a href="signup1.html">SignUp?</a>
-                </span>
-            </label>
+            <button type="submit" onclick="login()" id="loginbutton">Login</button>
         </div>
     </form>
-
+    <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me ||
+        <span class="signup">
+            <a href="signup1.html">SignUp?</a>
+        </span>
+    </label>
     <!--            <div class="container" style="background-color:#f1f1f1">
                 <button type="button" class="cancelbtn">Cancel</button>
             </div>-->
-
-
+            <script src="scripts/user.js"></script>
 </body>
 
 </html>
