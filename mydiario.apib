@@ -1,0 +1,93 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# Mydiario
+
+MyDiary is an online journal where users can pen down their thoughts and feelings.
+
+## Mydiario Requests Collection 
+
+### Sign up User [POST/auth/signup]
++ Response 200 (application/json)
+
+        {  
+        "username": "Johnson",
+        "password": "john123"
+        }
+
+### Sign in User [POST/auth/login]
++ Response 200 (application/json)
+
+        {   
+        "username": "Johnson",
+        "password": "john123"
+        }
+        
+### Get all entries [GET/entries]
++ Request 200 (application/json)
+
+        {}
+        
+    
+### Create Entries [POST/entries]  
++ Request 201 (application/json)
+
+        {
+        "due_date":"2002-01-02",
+        "name": "Studying",
+        "purpose": "To acquire degree",
+        "type": "school"
+        }
+
+### Get single id Entry[POST/entries/2]
++ Request 201 (application/json)
+
+        {
+        "date_created": "2018-08-02",
+        "due_date": "2002-01-02",
+        "id": 2,
+        "name": "Studying",
+        "purpose": "To acquire degree",
+        "type": "school",
+        "user_id": 144
+        }
+
+### Get all Users Entries [GET/entries]
++ Request 200 (application/json)
+
+        {
+        "date_created": "2018-08-02",
+        "due_date": "2002-09-02",
+        "id": 1,
+        "name": "meeting",
+        "purpose": "To prepare for susan's wedding",
+        "type": "Office",
+        "user_id": 144
+        },
+        {
+        "date_created": "2018-08-02",
+        "due_date": "2002-01-02",
+        "id": 2,
+        "name": "Studying",
+        "purpose": "To acquire degree",
+        "type": "school",
+        "user_id": 144
+        },
+        {
+        "date_created": "2018-08-02",
+        "due_date": "2002-01-02",
+        "id": 3,
+        "name": "playing",
+        "purpose": "To keep fit",
+        "type": "sports",
+        "user_id": 144
+        },
+        {
+        "date_created": "2018-08-02",
+        "due_date": "2003-09-02",
+        "id": 4,
+        "name": "cooking",
+        "purpose": "Family dinner",
+        "type": "Home",
+        "user_id": 144
+         }   
